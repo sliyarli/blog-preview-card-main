@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  resize: none;
+  font-family: "Figtree", sans-serif;
+}
+
+:root {
+  /* Primary Colors */
+  --yellow: hsl(47, 88%, 63%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--yellow);
+}
+
+.blog-card {
+  background-color: #fff;
+  width: 300px;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid #000000;
+  box-shadow: 5px 4px 0px 2px rgba(0, 0, 0, 0.94);
+  -webkit-box-shadow: 5px 4px 0px 2px rgba(0, 0, 0, 0.94);
+  -moz-box-shadow: 5px 4px 0px 2px rgba(0, 0, 0, 0.94);
+}
+.card-image img {
+  border-radius: 10px;
+  width: 100%;
+}
+.card-category {
+  font-size: 11px;
+  background-color: var(--yellow);
+  align-self: flex-start;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.card-meta-data {
+}
+
+.card-heading {
+  font-size: 18px;
+  color: #000000;
+  transition: 0.3s;
+  font-weight: 800;
+}
+
+.card-heading:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.card-text {
+  font-size: 13px;
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 15px;
+}
+.card-user img {
+  width: 10%;
+  margin-right: 5px;
+}
+
+.card-user small {
+  font-size: 12px;
+  font-weight: 800;
+}
